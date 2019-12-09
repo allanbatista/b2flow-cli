@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require "b2flow/cli"
+
+B2flow::Cli::B2flow.start(ARGV)
