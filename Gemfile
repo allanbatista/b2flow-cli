@@ -4,5 +4,6 @@ source "https://rubygems.org"
 gemspec
 
 gem 'thor'
+gem 'safe_yaml'
 gem 'faraday'
 gem 'terminal-table'

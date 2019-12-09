@@ -1,5 +1,3 @@
-
-
 require "thor"
 require 'json'
 require 'b2flow/api/connection'

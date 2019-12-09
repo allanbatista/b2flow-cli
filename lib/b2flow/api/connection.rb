@@ -1,6 +1,7 @@
 require 'json'
 require 'faraday'
 require 'singleton'
+require "logger"
 
 module B2flow
   module Api
@@ -32,6 +33,12 @@ module B2flow
 
       def post(path, body={})
         connection.post(path) do |f|
+          f.body = body.to_json
+        end
+      end
+
+      def put(path, body={})
+        connection.put(path) do |f|
           f.body = body.to_json
         end
       end
