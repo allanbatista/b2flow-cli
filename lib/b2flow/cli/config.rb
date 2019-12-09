@@ -35,7 +35,7 @@ module B2flow
               "hostname": options[:hostname],
               "username": options[:username],
               "protocol": options[:protocol],
-              "post": options[:port],
+              "port": options[:port],
               "token": token
             }))
           end
