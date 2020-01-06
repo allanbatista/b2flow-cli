@@ -42,6 +42,10 @@ module B2flow
           f.body = body.to_json
         end
       end
+
+      def delete(path)
+        connection.delete(path)
+      end
     end
   end
 end

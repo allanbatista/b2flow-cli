@@ -8,6 +8,7 @@ module B2flow
         columns = results.map {|row| row.keys }.flatten.uniq.sort
       end
 
+
       rows = results.map do |row|
         columns.map do |column|
           value = row[column]
